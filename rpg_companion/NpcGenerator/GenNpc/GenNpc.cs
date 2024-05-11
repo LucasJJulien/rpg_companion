@@ -7,13 +7,14 @@ using rpg_companion.GenerateEnemy;
 
 namespace rpg_companion.Enemy.GenEnemy
 {
-    public class GenEnemy
+    public class GenNpc
     {
         public static void genHuman(string name)
         {
             Biological Enemy = new Biological(name);
             Console.WriteLine();
             Console.WriteLine("Name: " + Enemy.name);
+            Console.WriteLine("Type: Biological");
             Console.WriteLine("HP: " + Enemy.hp);
             Console.WriteLine("Race: " + Enemy.race);
             Console.WriteLine("Sex: " + Enemy.gender);
@@ -28,8 +29,13 @@ namespace rpg_companion.Enemy.GenEnemy
             Robot Enemy = new Robot(name);
             Console.WriteLine();
             Console.WriteLine("Name: " + Enemy.name);
+            Console.WriteLine("Type: Robot");
             Console.WriteLine("HP: " + Enemy.hp);
             Console.WriteLine("Robot Type: " + Enemy.robotType);
+            Console.WriteLine("Program: " + Enemy.program);
+            Console.WriteLine("Body: " + Enemy.body);
+            Console.WriteLine("Movement: " + Enemy.movement);
+
             Console.WriteLine();
 
         }
@@ -39,6 +45,7 @@ namespace rpg_companion.Enemy.GenEnemy
             Creature Enemy = new Creature(name);
             Console.WriteLine();
             Console.WriteLine("Name: " + Enemy.name);
+            Console.WriteLine("Type: Creature");
             Console.WriteLine("HP: " + Enemy.hp);
             Console.WriteLine("Creature Type: " + Enemy.creatureType);
             Console.WriteLine();

@@ -17,12 +17,12 @@ namespace RPG_Companion
             bool programStatus = true;
             string name = "filler";
             string command;
-            var commands = new List<string> { "gen-enemy", "gen-loot", "gen-vehicle", "display-database", "terminate" };
+            var commands = new List<string> { "gen-npc", "gen-loot", "gen-vehicle", "gen-planet", "display-data", "terminate" };
 
 
             while (programStatus == true)
             {
-                Console.WriteLine("Input Command: (" + commands[0] + ") - (" + commands[1] + ") - (" + commands[2] + ") - (" + commands[3] + ") - (" + commands[4] + ")");
+                Console.WriteLine("Input Command: (" + commands[0] + ") - (" + commands[1] + ") - (" + commands[2] + ") - (" + commands[3] + ") - (" + commands[4] + ")- (" + commands[5] + ")");
                 command = textModify.toLowerCase(Console.ReadLine());
 
                 //Command Execution
@@ -39,6 +39,10 @@ namespace RPG_Companion
                     GenVehicleUI.UI();
                 }
                 else if (command == commands[3])
+                {
+                    GenPlanetUI.UI();
+                }
+                else if (command == commands[4])
                 {
 
                 }

@@ -8,7 +8,7 @@ using rpg_companion.CharModify;
 
 namespace rpg_companion.Enemy.GenEnemy
 {
-    public class genEnemyStats
+    public class GenNpcStats
     {
         internal static int genHp()
         {

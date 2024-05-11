@@ -9,16 +9,16 @@ using rpg_companion.Enemy.GenEnemy;
 
 namespace rpg_companion.GenerateEnemy
 {
-    public class Biological : Enemy
+    public class Biological : Npc
     {
         public string race;
         public string gender;
         public Biological(string humanName)
         {
             name = humanName;
-            hp = genEnemyStats.genHp();
-            race = genEnemyStats.genRace();
-            gender = genEnemyStats.genSex();
+            hp = GenNpcStats.genHp();
+            race = GenNpcStats.genRace();
+            gender = GenNpcStats.genSex();
             weapon = WorldStats.RetrieveStats.GenWeapon.RandomWeapon();
             screen = WorldStats.RetrieveStats.GenScreen.genScreen();
             suit = WorldStats.RetrieveStats.GenSuit.genSuit();

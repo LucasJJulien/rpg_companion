@@ -44,7 +44,27 @@ namespace rpg_companion.Interface
             }
             else if (command == lootTypes[4])
             {
-
+                for (int i = 0; i < lootNumber; i++)
+                {
+                    int lootType = mathFunctions.randomNumber(1, 4);
+                    switch (lootType)
+                    {
+                        case 1:
+                            LootGenerator.genLoot.randomLoot(1);
+                            break;
+                        case 2:
+                            LootGenerator.genLoot.randomWeapon(1);
+                            break;
+                        case 3:
+                            LootGenerator.genLoot.randomScreen(1);
+                            break;
+                        case 4:
+                            LootGenerator.genLoot.randomSuit(1);
+                            break;
+                        default:
+                            break;
+                    }
+                }
             }
             else
             {

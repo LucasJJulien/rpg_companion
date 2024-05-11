@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace rpg_companion.GenerateEnemy
 {
-    public class Enemy
+    public class Npc
     {
         enum Type
         {

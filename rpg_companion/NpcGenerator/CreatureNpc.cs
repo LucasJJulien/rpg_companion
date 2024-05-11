@@ -9,14 +9,14 @@ using System.Xml.Linq;
 
 namespace rpg_companion.GenerateEnemy
 {
-    public class Creature : Enemy
+    public class Creature : Npc
     {
         public string creatureType;
         public Creature(string creatureName)
         {
             name = creatureName;
-            hp = genEnemyStats.genHp();
-            creatureType = genEnemyStats.genCreatureType();
+            hp = GenNpcStats.genHp();
+            creatureType = GenNpcStats.genCreatureType();
         }
     }
 }
