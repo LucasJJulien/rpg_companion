@@ -12,7 +12,7 @@ namespace rpg_companion.WorldStats.RetrieveStats
 
         internal static string genRandomEquipment()
         {
-            int equipmentType = mathFunctions.randomNumber(1, 5);
+            int equipmentType = mathFunctions.randomNumber(1, 7);
             switch (equipmentType)
             {
                 case 1:
@@ -29,6 +29,12 @@ namespace rpg_companion.WorldStats.RetrieveStats
                     break;
                 case 5:
                     return (genKits());
+                    break;
+                case 6:
+                    return (genAmmo());
+                    break;
+                case 7:
+                    return (genGrenades());
                     break;
                 default:
                     return ("Request failed.");
@@ -57,11 +63,24 @@ namespace rpg_companion.WorldStats.RetrieveStats
             return medical;
         }
 
+        internal static string genPower()
+        {
+            int powerIndex = mathFunctions.randomNumber(0, WorldStats.Equipment.power.Count);
+            string power = WorldStats.Equipment.power[powerIndex];
+            return power;
+        }
+
         internal static string genAmmo()
         {
             int ammoIndex = mathFunctions.randomNumber(0, WorldStats.Equipment.ammunition.Count);
-            string ammo = WorldStats.Equipment.ammunition[ammoIndex];
-            return ammo;
+            string power = WorldStats.Equipment.ammunition[ammoIndex];
+            return power;
+        }
+        internal static string genGrenades()
+        {
+            int grenadesIndex = mathFunctions.randomNumber(0, WorldStats.Equipment.grenades.Count);
+            string grenades = WorldStats.Equipment.grenades[grenadesIndex];
+            return grenades;
         }
 
         internal static string genKits()

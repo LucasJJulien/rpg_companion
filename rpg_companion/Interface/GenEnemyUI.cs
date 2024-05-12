@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace rpg_companion.Interface
 {
-    class GenEnemyUI
+    public class GenEnemyUI
     {
         public static void UI()
         {
