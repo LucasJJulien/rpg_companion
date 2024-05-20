@@ -16,7 +16,7 @@ namespace rpg_companion.Interface
             string command;
             int numOne;
             int numTwo;
-            var commands = new List<string> { "gen-number", "d-10"};
+            var commands = new List<string> { "custom", "d-10"};
 
             Console.WriteLine("Input Planet Type: (" + commands[0] + ") - (" + commands[1] + ")");
 

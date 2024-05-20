@@ -12,15 +12,14 @@ namespace rpg_companion.GenerateEnemy
 {
     public class Robot : Npc
     {
-        public string robotName;
         public string robotType;
         public string level;
         public string program;
         public string body;
         public string movement;
-        public Robot(string name)
+        public Robot(string robotName)
         {
-            robotName = name;
+            name = robotName;
             hp = GenNpcStats.genHp();
             level = GenRobot.genLevel();
             program = GenRobot.genProgram();
