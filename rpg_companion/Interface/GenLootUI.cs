@@ -35,6 +35,7 @@ namespace rpg_companion.Interface
                 LootGenerator.genLoot.randomWeapon(lootNumber);
             }
 
+            //Temporary solution to bias toward weapons and screens. Proper modifiers will be added later.
             else if (command == lootTypes[2])
             {
                 for (int i = 0; i < lootNumber; i++)
