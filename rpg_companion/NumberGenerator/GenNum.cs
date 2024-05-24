@@ -27,6 +27,7 @@ namespace rpg_companion.NumberGenerator
                 finalNum += numOne;
                 Console.Write(numOne + " - ");
             }
+            Console.Write("End.");
             Console.WriteLine();
 
             Console.WriteLine("Final Number: " + finalNum);
